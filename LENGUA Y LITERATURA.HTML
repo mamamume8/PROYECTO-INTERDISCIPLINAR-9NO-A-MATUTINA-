@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengua y Literatura - Unidad Educativa Rosa Olga Villacrés Lozano</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Estilo del Encabezado */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-bottom: 5px solid #e2e8f0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Estilo del contenido principal */
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #2b6cb0;
+            font-size: 2rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            width: 100%;
+            border-bottom: 3px solid #cbd5e0;
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        /* Contenedor del video */
+        .video-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            margin-bottom: 50px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        /* Contenedor de las actividades (Minilibro y Acordeón) */
+        .actividades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .tarjeta-actividad {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .tarjeta-actividad:hover {
+            transform: translateY(-10px);
+        }
+
+        .tarjeta-actividad img {
+            width: 100%;
+            height: 300px; /* Un poco más grandes para que se aprecien mejor */
+            object-fit: cover;
+            border-bottom: 4px solid #2b6cb0;
+        }
+
+        .texto-actividad {
+            padding: 25px;
+            text-align: left;
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .texto-actividad h3 {
+            margin-top: 0;
+            color: #1a365d;
+            font-size: 1.5rem;
+        }
+
+        /* Galería Decorativa (Enchulada) */
+        .galeria-decorativa {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .galeria-decorativa img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease, filter 0.4s ease;
+            filter: grayscale(20%);
+        }
+
+        .galeria-decorativa img:hover {
+            transform: scale(1.08);
+            filter: grayscale(0%);
+            z-index: 10;
+        }
+
+        /* Botón para regresar a la página principal */
+        .btn-volver {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #1a365d;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .btn-volver:hover {
+            background-color: #2b6cb0;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lengua y Literatura</h1>
+    </header>
+
+    <main>
+        
+        <h2>🎬 Presentación del Proyecto</h2>
+        <p class="subtitle">Conoce más sobre nuestras iniciativas literarias con este video introductorio:</p>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="20260604_074158.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <h2>🎨 Proyectos de los Estudiantes</h2>
+        <p class="subtitle">Creatividad y letras en acción.</p>
+        
+        <div class="actividades-grid">
+            <div class="tarjeta-actividad">
+                <img src="LIBRODE LEYENDA.JPG" alt="Minilibro Leyenda">
+                <div class="texto-actividad">
+                    <h3>El Minilibro de Leyendas</h3>
+                    <p>En esta actividad, los estudiantes plasmaron leyendas tradicionales utilizando su creatividad para redactar y dibujar historias en un formato de minilibro, fomentando la lectura y el respeto por la cultura ancestral.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-actividad">
+                <img src="20260604_085425.jpg" alt="Acordeón Literario">
+                <div class="texto-actividad">
+                    <h3>El Acordeón Literario</h3>
+                    <p>Una forma dinámica y visual de organizar la información. Los estudiantes utilizaron este recurso manual para desglosar poemas, historias y conceptos clave de la asignatura de forma interactiva.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>📚 Rincón Literario</h2>
+        <p class="subtitle">La imaginación es el único límite cuando abres un libro.</p>
+        
+        <div class="galeria-decorativa">
+            <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&w=800&q=80" alt="Diccionario y letras">
+            <img src="https://images.unsplash.com/photo-1474932430478-367dbb6832c1?auto=format&fit=crop&w=800&q=80" alt="Máquina de escribir retro">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Libro abierto brillante">
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead2708?auto=format&fit=crop&w=800&q=80" alt="Pluma y cuaderno">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Librería estética">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Montaña de libros">
+        </div>
+
+        <a href="index.html" class="btn-volver">← Regresar al Menú Principal</a>
+    </main>
+
+</body>
+</html>
