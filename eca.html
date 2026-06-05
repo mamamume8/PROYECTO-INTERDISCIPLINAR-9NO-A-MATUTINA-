@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECA - Unidad Educativa Rosa Olga Villacrés Lozano</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #fdf2f8; color: #831843; text-align: center; margin: 0; padding: 20px; }
+        header { background-color: #db2777; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .video-container { margin: 20px 0; }
+        video { max-width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: left; border-left: 5px solid #db2777; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 30px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; border: 3px solid #db2777; }
+        .btn-volver { display: inline-block; margin-top: 30px; padding: 10px 20px; background: #db2777; color: white; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎨 Educación Cultural y Artística</h1>
+        <p>Proyecto de Vida: Creando nuestro futuro</p>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <video controls>
+                <source src="eca.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+
+        <h2>Fases del Proyecto</h2>
+        <div class="grid">
+            <div class="card"><h3>1. Reflexión interna</h3><p>Identificar las fortalezas personales, habilidades y destrezas desarrolladas a lo largo de este proyecto escolar.</p></div>
+            <div class="card"><h3>2. Planteamiento de metas</h3><p>Definir objetivos personales o de estudio a corto y largo plazo que respondan a sus intereses vocacionales.</p></div>
+            <div class="card"><h3>3. Evaluación de alternativas</h3><p>Analizar qué decisiones cotidianas y económicas se deben tomar para poder alcanzar dichas metas en el futuro.</p></div>
+            <div class="card"><h3>4. Cierre del proyecto</h3><p>Escribir o ilustrar el mapa final de su Proyecto de Vida en la contraportada de su Libreta de Saberes.</p></div>
+        </div>
+
+        <h2>Evidencias Creativas</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1547826553-06637e199d39?auto=format&fit=crop&w=600&q=80" alt="Libreta de arte inspiradora">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" alt="Planificación de metas">
+            <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?auto=format&fit=crop&w=600&q=80" alt="Mapa de vida ilustrado">
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="Creatividad y diseño">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Trabajo en equipo para el futuro">
+        </div>
+
+        <a href="index.html" class="btn-volver">← Regresar al Menú Principal</a>
+    </main>
+
+</body>
+</html>
