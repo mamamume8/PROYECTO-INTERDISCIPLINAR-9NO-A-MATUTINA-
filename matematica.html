@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática - Unidad Educativa Rosa Olga Villacrés Lozano</title>
+    <style>
+        /* Estilos generales analíticos */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc; /* Gris muy claro */
+            color: #1e293b;
+            text-align: center;
+        }
+
+        /* Encabezado Matemático */
+        header {
+            background-color: #1e3a8a; /* Azul marino intenso */
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-bottom: 5px solid #38bdf8; 
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #0f172a; 
+            font-size: 2.4rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-bottom: 3px solid #38bdf8; 
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #475569;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        /* Contenedor del video */
+        .video-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
+            margin-bottom: 60px;
+            border: 2px solid #e2e8f0;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            outline: none;
+        }
+
+        /* Tarjetas de Fases */
+        .fases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .fase-card {
+            background-color: white;
+            padding: 30px 25px;
+            border-radius: 12px; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            text-align: left;
+            position: relative;
+            transition: all 0.3s ease;
+            border-left: 6px solid #38bdf8;
+        }
+
+        .fase-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(56, 189, 248, 0.15); 
+        }
+
+        .fase-card h3 {
+            color: #1e3a8a;
+            margin-top: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .fase-card .icono {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            border-radius: 4px; 
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .fase-card p {
+            color: #334155;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Sección del Proyecto Destacado Principal */
+        .proyecto-destacado {
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 900px;
+            width: 100%;
+            margin-bottom: 40px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .proyecto-destacado img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .proyecto-destacado h3 {
+            color: #1e3a8a;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        /* Galería de Trabajos Matemáticos */
+        .galeria-math {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 60px;
+        }
+
+        .galeria-math img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #cbd5e1;
+        }
+
+        .galeria-math img:hover {
+            transform: scale(1.04);
+        }
+
+        /* Botón para regresar */
+        .btn-volver {
+            display: inline-block;
+            padding: 16px 45px;
+            background-color: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .btn-volver:hover {
+            background-color: #0f172a; 
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(30, 58, 138, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📐 Matemática</h1>
+    </header>
+
+    <main>
+        
+        <h2>🎬 Presentación del Proyecto</h2>
+        <p class="subtitle">Análisis económico y gestión financiera responsable.</p>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="matematica.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <h2>📊 Fases del Análisis Lógico</h2>
+        <p class="subtitle">Estructurando la información a través del cálculo.</p>
+
+        <div class="fases-grid">
+            <div class="fase-card">
+                <h3><span class="icono">1</span> Comprensión financiera</h3>
+                <p>Analizar situaciones cotidianas de gastos (alimentación, educación, necesidades del hogar).</p>
+            </div>
+            
+            <div class="fase-card">
+                <h3><span class="icono">2</span> Estructuración matemática</h3>
+                <p>Clasificar la información económica cuantificable en rubros de ingresos (+), egresos (-) y saldo disponible.</p>
+            </div>
+
+            <div class="fase-card">
+                <h3><span class="icono">3</span> Ejecución de cálculos</h3>
+                <p>Resolver operaciones aritméticas básicas de adición y sustracción para balancear los recursos lógicamente.</p>
+            </div>
+
+            <div class="fase-card">
+                <h3><span class="icono">4</span> Diseño de la tabla</h3>
+                <p>Dibujar a mano con regla una tabla de doble entrada limpia y organizada para registrar el presupuesto final dentro del fanzine.</p>
+            </div>
+        </div>
+
+        <h2>📓 Mi Presupuesto Familiar</h2>
+        <p class="subtitle">Evidencia del registro de gastos y balance financiero.</p>
+
+        <div class="proyecto-destacado">
+            <img src="matematica.jpg" alt="Tabla de Presupuesto - El gasto de mi hogar">
+            <h3>"El Gasto de mi Hogar"</h3>
+            <p>Los estudiantes aplicaron operaciones aritméticas para balancear sus ingresos y egresos, logrando una reflexión financiera sobre la importancia del ahorro familiar.</p>
+        </div>
+
+        <h2>📉 Evidencias Estadísticas</h2>
+        <p class="subtitle">Gráficos, cálculos y análisis en proceso.</p>
+
+        <div class="galeria-math">
+                                            </div>
+
+        <a href="index.html" class="btn-volver">← Regresar al Menú Principal</a>
+    </main>
+
+</body>
+</html>

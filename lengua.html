@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengua y Literatura - Unidad Educativa Rosa Olga Villacrés Lozano</title>
+    <style>
+        /* Estilos generales clásicos/literarios */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf8f5; 
+            color: #2d3748;
+            text-align: center;
+        }
+
+        /* Encabezado Literario */
+        header {
+            background-color: #7b341e; 
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-bottom: 5px solid #dd6b20; 
+            position: relative;
+            background-image: linear-gradient(135deg, #7b341e, #9c4221);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Contenido principal */
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #9c4221; 
+            font-size: 2.4rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            width: 100%;
+            border-bottom: 3px solid #fbd38d; 
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        /* Contenedor del video */
+        .video-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(123, 52, 30, 0.15); 
+            margin-bottom: 60px;
+            border: 2px solid #feebc8;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        /* Tarjetas de Fases */
+        .fases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .fase-card {
+            background-color: white;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            text-align: left;
+            position: relative;
+            transition: all 0.3s ease;
+            border-top: 5px solid #dd6b20;
+        }
+
+        .fase-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 25px rgba(221, 107, 32, 0.15); 
+        }
+
+        .fase-card h3 {
+            color: #7b341e;
+            margin-top: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .fase-card .icono {
+            background-color: #feebc8;
+            color: #dd6b20;
+            border-radius: 50%; 
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .fase-card p {
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* Galería de Trabajos Literarios */
+        .galeria-literaria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1100px;
+            margin-bottom: 60px;
+            background-color: #fffaf0;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .galeria-literaria img {
+            width: 100%;
+            height: 450px; 
+            object-fit: cover;
+            object-position: top;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid #cbd5e0;
+        }
+
+        .galeria-literaria img:hover {
+            transform: scale(1.03);
+            border-color: #dd6b20;
+            z-index: 5;
+        }
+
+        /* Botón para regresar */
+        .btn-volver {
+            display: inline-block;
+            padding: 16px 45px;
+            background-color: #c05621;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(192, 86, 33, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .btn-volver:hover {
+            background-color: #7b341e; 
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(123, 52, 30, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>📖 Lengua y Literatura</h1>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: Video -->
+        <h2>🎬 Presentación del Proyecto</h2>
+        <p class="subtitle">Nuestros estudiantes introducen el mundo de las letras y las historias.</p>
+        
+        <div class="video-container">
+            <video controls>
+                <!-- Archivo de video limpio y exacto -->
+                <source src="lengua.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <!-- SECCIÓN 2: Información del Proyecto -->
+        <h2>✍️ Fases de Creación Literaria</h2>
+        <p class="subtitle">El proceso paso a paso para construir nuestros relatos.</p>
+
+        <div class="fases-grid">
+            <div class="fase-card">
+                <h3><span class="icono">1</span> Activación de saberes</h3>
+                <p>Escuchar relatos, mitos o leyendas tradicionales de la localidad contados oralmente en el aula.</p>
+            </div>
+            
+            <div class="fase-card">
+                <h3><span class="icono">2</span> Planificación</h3>
+                <p>Definir los personajes, el escenario físico y el conflicto de la historia en base a la experiencia personal del estudiante.</p>
+            </div>
+
+            <div class="fase-card">
+                <h3><span class="icono">3</span> Redacción del borrador</h3>
+                <p>Escribir un primer texto a mano adaptando recursos estilísticos sencillos (metáforas, personificaciones).</p>
+            </div>
+
+            <div class="fase-card">
+                <h3><span class="icono">4</span> Edición y transbordo</h3>
+                <p>Revisar la ortografía y transcribir de forma limpia el relato definitivo dentro del fanzine físico.</p>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3: Galería de Trabajos -->
+        <h2>📜 Relatos y Fanzines</h2>
+        <p class="subtitle">Evidencias del trabajo escrito y la creatividad de nuestros estudiantes sobre la historia de Limonal.</p>
+
+        <div class="galeria-literaria">
+            <img src="lengua_y_literatura_1.jpeg" alt="Borrador de relato a mano">
+            <img src="lengua_y_literatura_5.jpeg" alt="Historia de Limonal escrita a mano">
+            <img src="lengua_y_literatura_6.jpeg" alt="Texto sobre comunidad de Limonal con imagen">
+            <img src="lengua_y_literatura_7.jpg" alt="Fanzine terminado y coloreado">
+        </div>
+
+        <!-- Botón para regresar -->
+        <a href="index.html" class="btn-volver">← Regresar al Menú Principal</a>
+    </main>
+
+</body>
+</html>
